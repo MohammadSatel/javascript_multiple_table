@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change buttons</title>
+</head>
+
+<body>
+    <button onclick="right()">right</button>
+    <div style="position: absolute;" id="d1">test</div>
+    <button onclick="left()">button</button>
+
+    <script>
+            let i = 100
+function right(){
+    console.log(d1.style.left);
+    d1.style.left = i +"px"
+    i += 10
+}
+function down(){
+    d1.style.top ="50px"
+}
+setInterval(right,1500)
+    </script>
+</body>
+
+</html>
